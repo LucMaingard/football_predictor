@@ -15,27 +15,24 @@ Interestingly the top performer was a Random Forest performing at 60%, closely f
 
 Precision, Recall, F1-Score:
 Random Forrest (max_depth=0, random_state=7) Classification Report (normalised)
-               precision    recall  f1-score   support
 
+               precision    recall  f1-score   support
           -1       0.57      0.64      0.60       312
            0       0.36      0.14      0.20       254
            1       0.66      0.82      0.73       479
 
     accuracy                           0.60      1045
-   macro avg       0.53      0.53      0.51      1045
-weighted avg       0.56      0.60      0.57      1045
 
 
 Log Reg Classification Report (standardised)
-              precision    recall  f1-score   support
 
+              precision    recall  f1-score   support
           -1       0.56      0.69      0.62       312
            0       0.29      0.11      0.16       254
            1       0.66      0.78      0.72       479
 
     accuracy                           0.59      1045
-   macro avg       0.50      0.53      0.50      1045
-weighted avg       0.54      0.59      0.55      1045
+
 
 
 The labels:  “-1” refers to “away wins”; “0” to “draws” and “1” to “home wins”. As can be seen above both Random Forest and Logistic Regression performed the best on predicting home wins, and worst on draws. This is unsurprising as logic would dictate that playing at home results in an advantage and an increased likelihood of coming away with a win. While draws are the least likely of the three outcomes and are thus unpredictable. 
